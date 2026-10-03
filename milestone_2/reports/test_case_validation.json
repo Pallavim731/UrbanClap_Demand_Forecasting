@@ -1,0 +1,7 @@
+{
+    "total_test_cases": 50,
+    "valid_test_cases": 50,
+    "invalid_test_cases": 0,
+    "model_target": "purchase_prediction",
+    "note": "The supplied test cases contain four input fields and do not contain all features required by the clickstream baseline model. Therefore they are validated separately rather than passed directly to the baseline model."
+}
