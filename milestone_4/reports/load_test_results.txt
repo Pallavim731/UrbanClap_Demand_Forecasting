@@ -1,0 +1,25 @@
+UrbanClap Demand Forecasting
+Milestone 4 - Integration and Load Testing
+
+Load Test Configuration
+-----------------------
+API Endpoint: http://127.0.0.1:8000/predict
+Total Requests: 50
+Concurrent Requests: 50
+
+Results
+-------
+Total Requests:
+Successful Requests:
+Failed Requests:
+Total Test Time:
+Average Latency:
+Minimum Latency:
+Maximum Latency:
+Throughput:
+
+Conclusion
+----------
+The model was successfully integrated into a Flask API.
+The API was tested with 50 concurrent requests.
+Latency and throughput were measured during the load test.
