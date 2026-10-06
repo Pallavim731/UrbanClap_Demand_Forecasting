@@ -1,0 +1,50 @@
+URBANCLAP DEMAND FORECASTING - BASELINE REPORT
+=======================================================
+
+1. DATASET
+------------------------------
+Dataset: clickstream.csv
+Total records: 1000
+Features used: 10
+Target: label_purchased
+
+2. PREPROCESSING
+------------------------------
+- Missing search_query values replaced with 'No Search'
+- Categorical features converted using One-Hot Encoding
+- Dataset split into 80% training and 20% testing
+- random_state = 42
+- Stratified train-test split was used
+
+3. BASELINE MODEL
+------------------------------
+Model: Logistic Regression
+max_iter: 1000
+random_state: 42
+
+4. EVALUATION RESULTS
+------------------------------
+Accuracy : 0.5050
+Precision: 0.5417
+Recall   : 0.7027
+F1-score : 0.6118
+
+5. CONFUSION MATRIX
+------------------------------
+[[23 66]
+ [33 78]]
+
+6. CLASSIFICATION REPORT
+------------------------------
+              precision    recall  f1-score   support
+
+           0       0.41      0.26      0.32        89
+           1       0.54      0.70      0.61       111
+
+    accuracy                           0.51       200
+   macro avg       0.48      0.48      0.46       200
+weighted avg       0.48      0.51      0.48       200
+
+7. BASELINE CONCLUSION
+------------------------------
+The Logistic Regression model establishes the initial performance benchmark for purchase prediction. Future models can be compared against these baseline metrics.

@@ -1,0 +1,30 @@
+URBANCLAP DEMAND FORECASTING - MILESTONE 3
+=======================================================
+
+1. OBJECTIVE
+------------------------------
+Train the primary Logistic Regression model using multiple hyperparameter configurations and track the experiments using MLflow.
+
+2. EXPERIMENT CONFIGURATIONS
+------------------------------
+C=0.1, solver=lbfgs, max_iter=1000
+C=1.0, solver=lbfgs, max_iter=1000
+C=10.0, solver=lbfgs, max_iter=1000
+
+3. EXPERIMENT RESULTS
+------------------------------
+                          run_id    C solver  max_iter  accuracy  precision   recall  f1_score
+c9880d969a8147f5a2c2cdc0d9b3a126  0.1  lbfgs      1000     0.530   0.553459 0.792793  0.651852
+e42af43423d14d1b8cd49bb6f058ed97  1.0  lbfgs      1000     0.505   0.541667 0.702703  0.611765
+651ff3a801ce4cebbea7a7eef74d7eaf 10.0  lbfgs      1000     0.500   0.539007 0.684685  0.603175
+
+4. BEST CONFIGURATION
+------------------------------
+C: 0.1
+Solver: lbfgs
+Max iterations: 1000
+Best F1-score: 0.6519
+
+5. CONCLUSION
+------------------------------
+Three Logistic Regression configurations were trained and tracked using MLflow. The configuration with the highest F1-score was selected as the best configuration. The experiment results provide evidence for comparing the hyperparameter configurations.
